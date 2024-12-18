@@ -11,16 +11,15 @@ $heading = "Varibles and DataTypes";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title ?></title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
-    <div class="container-fluid ">
+    <div class="container ">
 
-        <h1 class="p-2 m-0 mb-2 bg-primary"><?= $heading ?></h1>
+        <h1 class="p-3 m-0 bg-blue-500 text-whte font-bold text-3xl h-full "><?= $heading ?></h1>
 
         <?php
         $name = "Amit"; #string
@@ -33,6 +32,10 @@ $heading = "Varibles and DataTypes";
         $detals = ["name" => $name, "age" => $age, "salary" => $salary, "isMarried" => $isMarried, "colors" => $colors];
 
         $matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]; #multi-dimensional array
+
+        $person = new stdClass(); #Object
+
+        $nullVarible = null #null variable
 
         ?>
 
@@ -55,6 +58,12 @@ $heading = "Varibles and DataTypes";
             }
             ?>
 
+        </h2>
+
+        <h2>
+            <pre>
+                <?php print_r($person);?>
+            </pre>
         </h2>
 
     </div>
