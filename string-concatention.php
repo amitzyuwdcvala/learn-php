@@ -14,6 +14,10 @@
     <title>String Concatenation</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1><?= 'my name is' . $name ?></h1>
+        <h1><?= "hello, my name is {$name}" ?></h1>
+        <h1><?= "hello, my name is \"Amit\"" ?></h1>
+    </div>
 </body>
 </html>
