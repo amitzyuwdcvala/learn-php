@@ -36,7 +36,7 @@
 
         <table cellspacing="0" cellpadding="5" border="1">
             <thead>
-                <tr>
+                <tr style="background-color: black; color: white;">
                     <th>Operator</th>
                     <th>Result</th>
                 </tr>
@@ -82,7 +82,7 @@
 
         <table cellspacing="0" cellpadding="5" border="1">
             <thead>
-                <tr>
+                <tr style="background-color: black; color: white;">
                     <th>Operator</th>
                     <th>Result</th>
                 </tr>
@@ -136,7 +136,7 @@
 
         <table cellspacing="0" cellpadding="5" border="1">
             <thead>
-                <tr>
+                <tr style="background-color: black; color: white;">
                     <th>Operator</th>
                     <th>Result</th>
                 </tr>
@@ -192,7 +192,7 @@
 
     <table cellspacing="0" cellpadding="5" border="1">
         <thead>
-            <tr>
+            <tr style="background-color: black; color: white;">
                 <th>Operator</th>
                 <th>Result</th>
             </tr>
@@ -209,6 +209,37 @@
             ?>
         </tbody>
     </table>
+</div>
+
+<div class="functions">
+    <h1>Built In PHP Functions</h1>
+
+    <?php
+
+        //Rand :
+        //random numbers
+        $output = rand();
+
+        //get max random number
+        $output = getrandmax();
+
+        //get random number between range
+        $output = rand(1, 10);
+
+        
+        //round :
+        $output = round(7.5);
+
+        //ceil  : 
+        $output = round(7.5);   
+
+        //floor :
+        $output = floor(4.9);
+
+
+    ?>
+
+    <spam>Built In (rand) Function : </spam><input type="text" value="<?=$output?>">
 </div>
 
 </body>
